@@ -1,9 +1,9 @@
 import Foundation
 
-struct Circle {
+public struct Circle {
     private let radius: Double
 
-    init(radius: Double) {
+    public init(radius: Double) {
         self.radius = radius
     }
 

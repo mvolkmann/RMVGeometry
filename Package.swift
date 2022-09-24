@@ -27,7 +27,7 @@ let package = Package(
         ),
         .testTarget(
             name: "RMVCircleTests",
-            dependencies: ["RMVGeometry"]
+            dependencies: ["RMVCircle"]
         ),
         .target(
             name: "RMVGeometry",

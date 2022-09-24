@@ -23,9 +23,7 @@ let package = Package(
         // and on products in packages this package depends on.
         .target(
             name: "RMVCircle",
-            dependencies: [],
-            path: "./Sources/RMVGeometry",
-            sources: ["RMVCircle.swift"]
+            dependencies: []
         ),
         .testTarget(
             name: "RMVCircleTests",

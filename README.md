@@ -1,3 +1,4 @@
 # RMVGeometry
 
-A description of this package.
+This is a simple Swift package I am using
+to learn about creating and using Swift packages.

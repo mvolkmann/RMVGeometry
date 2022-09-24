@@ -1,5 +1,5 @@
-import XCTest
 @testable import RMVGeometry
+import XCTest
 
 final class RMVGeometryTests: XCTestCase {
     func testExample() throws {
@@ -7,5 +7,9 @@ final class RMVGeometryTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
         XCTAssertEqual(RMVGeometry().text, "Hello, World!")
+    }
+
+    func testShout() throws {
+        XCTAssertEqual(RMVGeometry().shout, "HELLO, WORLD!")
     }
 }

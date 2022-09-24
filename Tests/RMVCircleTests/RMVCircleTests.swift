@@ -1,4 +1,4 @@
-@testable import RMVGeometry
+@testable import RMVCircle
 import XCTest
 
 final class RMVCircleTests: XCTestCase {

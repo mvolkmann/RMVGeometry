@@ -1,8 +1,8 @@
 @testable import RMVGeometry
 import XCTest
 
-final class CircleTests: XCTestCase {
+final class RMVCircleTests: XCTestCase {
     func testArea() throws {
-        XCTAssertEqual(Circle(radius: 5).area, Double.pi * 25.0)
+        XCTAssertEqual(RMVCircle(radius: 5).area, Double.pi * 25.0)
     }
 }

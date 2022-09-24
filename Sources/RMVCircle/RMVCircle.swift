@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Circle {
+public struct RMVCircle {
     private let radius: Double
 
     public init(radius: Double) {

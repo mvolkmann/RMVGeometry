@@ -6,12 +6,12 @@ import PackageDescription
 let package = Package(
     name: "RMVGeometry",
     products: [
-        // This package includes one library that has two targets.
+        // This package includes one library that has one target.
         // Users of this package at the library as dependency
         // and import the targets. (IS THIS CORRECT?)
         .library(
             name: "RMVGeometry",
-            targets: ["RMVCircle", "RMVGeometry"]
+            targets: ["RMVGeometry"]
         ),
     ],
     dependencies: [
@@ -22,8 +22,6 @@ let package = Package(
         // A target can define a module or a test suite.
         // Targets can depend on other targets in this package,
         // and on products in packages this package depends on.
-        .target(name: "RMVCircle"),
-        .testTarget(name: "RMVCircleTests"),
         .target(
             name: "RMVGeometry",
             dependencies: [],

@@ -1,15 +1,13 @@
 @testable import RMVGeometry
 import XCTest
 
+@available(iOS 15.0, *)
 final class RMVGeometryTests: XCTestCase {
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
+    func testText() throws {
         XCTAssertEqual(RMVGeometry().text, "Hello, World")
     }
 
     func testShout() throws {
-        XCTAssertEqual(RMVGeometry().shout, "HELLO, WORLD")
+        XCTAssertEqual(RMVGeometry().shout, "HELLO, WORLD!!!")
     }
 }

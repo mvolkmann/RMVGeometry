@@ -22,6 +22,7 @@ public struct RMVGeometry {
             .frame(width: size, height: size)
     }
 
+    /// Gets the uppercase version of the `text` property and adds exclamation points.
     public var shout: String {
         text.uppercased() + "!!!"
     }

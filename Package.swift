@@ -6,8 +6,9 @@ import PackageDescription
 let package = Package(
     name: "RMVGeometry",
     products: [
-        // Products define the executables and libraries a package produces,
-        // and make them visible to other packages.
+        // This package includes one library that has two targets.
+        // Users of this package at the library as dependency
+        // and import the targets. (IS THIS CORRECT?)
         .library(
             name: "RMVGeometry",
             targets: ["RMVCircle", "RMVGeometry"]

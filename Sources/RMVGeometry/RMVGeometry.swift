@@ -8,8 +8,13 @@ public struct RMVGeometry {
     // for structs are not public.
     public init() {}
 
-    public var comet: some View {
-        Image("Comet")
+    public func comet(size: Double) -> some View {
+        // This looks for the image inside the .xcassets file in this package
+        // instead of looking in the .xcassets file of the using application.
+        Image(uiImage: UIImage(named: "Comet", in: .module, with: nil)!)
+            .resizable()
+            .scaledToFit()
+            .frame(width: size, height: size)
     }
 
     public var shout: String {

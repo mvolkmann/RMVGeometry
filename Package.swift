@@ -22,12 +22,13 @@ let package = Package(
         // A target can define a module or a test suite.
         // Targets can depend on other targets in this package,
         // and on products in packages this package depends on.
-        .target(
-            name: "RMVCircle",
-            resources: [.process("Media.xcassets")]
-        ),
+        .target(name: "RMVCircle"),
         .testTarget(name: "RMVCircleTests"),
-        .target(name: "RMVGeometry", dependencies: []),
+        .target(
+            name: "RMVGeometry",
+            dependencies: [],
+            resources: [.process("RMVGeometry/Resources/Media.xcassets")]
+        ),
         .testTarget(name: "RMVGeometryTests", dependencies: ["RMVGeometry"])
     ]
 )
